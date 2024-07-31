@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="style.css">
+    <title>Тест</title>
+
+    <!-- Подключение jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /* Рамки для всех блоков */
+        .block {
+            border: 3px solid black;
+        }
+
+        /* Пунктирная рамка для среднего блока во втором ряду */
+        .block-dashed {
+            border-style: dashed;
+        }
+
+        /* Цвета для средних 3 блоков */
+        .block-1 {
+            background-color: #ff9999;
+        }
+
+        .block-2 {
+            background-color: #99ccff;
+        }
+
+        .block-3 {
+            background-color: #99ff99;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Блок во всю ширину -->
+<div class="container-fluid bg-primary text-white text-center py-3">
+    Блок во всю ширину страницы
+</div>
+
+<!-- Три блока равного размера -->
+<div class="container my-3">
+    <div class="row">
+        <div class="col-md-4 col-12 mb-3">
+            <div class="p-3 text-white text-center block-1">
+                Блок 1
+            </div>
+        </div>
+        <div class="col-md-4 col-12 mb-3">
+            <div class="p-3 text-white text-center block-2 block-dashed">
+                Блок 2
+            </div>
+        </div>
+        <div class="col-md-4 col-12 mb-3">
+            <div class="p-3 text-white text-center block-3">
+                Блок 3
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Два блока шириной в соотношении 1 к 2 -->
+<div class="container my-3">
+    <div class="row">
+        <div class="col-md-4 col-12 mb-3">
+            <div class="p-3 bg-success text-white text-center block">
+                Блок 4 (1/3 ширины)
+                <button type="button" class="btn btn-success">Success</button>
+            </div>
+        </div>
+        <div class="col-md-8 col-12">
+            <div class="p-3 bg-success text-white text-center block">
+                Блок 5 (2/3 ширины)
+                <button type="button" class="btn btn-success">Success</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
