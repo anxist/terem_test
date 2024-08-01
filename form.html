@@ -63,7 +63,6 @@
                 <option value="5">5</option>
             </select>
         </div>
-
         <!-- 2 поля для ручного ввода информации -->
         <div class="mb-3">
             <label for="input1" class="form-label">Поле 1</label>
@@ -73,7 +72,6 @@
             <label for="input2" class="form-label">Поле 2</label>
             <input type="text" class="form-control" id="input2" name="input2" placeholder="Введите информацию">
         </div>
-
         <!-- Кнопка  -->
         <button type="submit" class="btn btn-primary">Отправить</button>
     </form>
@@ -110,7 +108,7 @@
 
             // формирование URL с параметрами GET-запроса
             var queryString = $.param(formData);
-            var url = "handler.php?" + queryString; // замените `handler.php` на ваш реальный обработчик
+            var url = "handler.php?" + queryString;
 
             // Асинхронный GET-запрос
             $.ajax({
